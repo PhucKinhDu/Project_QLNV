@@ -32,6 +32,7 @@ function getLocalStorage() {
 getLocalStorage();
 
 function themNhanVien() {
+
     // getELE("btnThemNV").disabled = false;
 
     // Lấy thông tin
@@ -216,6 +217,7 @@ function hienThiChiTiet(id) {
         //Quan trọng. Chú ý dễ bị điên! O_____o"
         getELE("btnThemNV").disabled = true;
         getELE("btnCapNhat").disabled = false;
+        getELE("header-title").innerHTML = "Log in";
     }
 }
 
@@ -356,4 +358,5 @@ function resetForm() {
     getELE("tknv").disabled = false;
     getELE("btnThemNV").disabled = false;
     getELE("btnCapNhat").disabled = true;
+    getELE("header-title").innerHTML = "Register";
 }
